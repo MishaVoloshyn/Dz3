@@ -12,17 +12,12 @@ public:
 	}
 	void SetA(int v)
 	{
-		if (v > 0)
-		{
 			A = v;
-		}
 	}
 	void SetB(int v)
 	{
-		if (v > 0)
-		{
 			B = v;
-		}
+
 	}
 	float GetA()
 	{
@@ -58,7 +53,7 @@ int main()
 	setlocale(LC_ALL, "");
 	Fraction a;
 
-	a.SetA(10);
+	a.SetA(-10);
 	a.SetB(100);
 
 	float A = a.GetA();
@@ -72,6 +67,5 @@ int main()
 	cout << "Функция сложения" << endl << A << "/" << B << " + " << num << endl << "Результат сложения:" << sum << endl << endl;
 	cout << "Функция вычитания" << endl << A << "/" << B << " - " << num << endl << "Результат вычитания:" << dif << endl << endl;
 	cout << "Функция умножения" << endl << A << "/" << B << " * " << num << endl << "Результат умножения:" << multiply << endl << endl;
-	cout << "Функция деления" << endl << A << "/" << B << " / " << num << endl << "Результат деления:" << divide << endl << endl;
-
+	cout << "Функция деления" << endl << A << "/" << B << " / " << num << endl << "Результат деления:" << divide << endl;
 }
